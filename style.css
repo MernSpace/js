@@ -1,0 +1,9 @@
+body{
+    background: rebeccapurple;
+}
+
+.h1{
+    font-size: 52px;
+    font-weight: 800;
+    color: blue;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <section>
+        <div>
+            <h2>proparation</h2>
+            <ul id="ul">
+                <li>item 1</li>
+                <li id="item-2" style="color: aqua;">item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        document.getElementById('item-2').addEventListener('click', function(event){
+            console.log('li clicked')
+            event.stopPropagation()
+            alert('li clicked')
+        })
+    
+        document.getElementById('ul').addEventListener('click', function(event){
+            console.log('ul clicked')
+            event.stopPropagation()
+            alert('ul clicked')
+        })
+        document.getElementById('body').addEventListener('click', function(event){
+            console.log('body clicked')
+            event.stopPropagation()
+            alert('body clicked')
+        })
+    
+    </script>
+</body>
+</html>

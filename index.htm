@@ -6,13 +6,35 @@
     <link rel="stylesheet" href="style.css"/>
     <title>Document</title>
 </head>
-<body>
+<body id="body">
 
     <section>
        <div id="my-div">
-        <h1 onmouseover="onHover()" id="h1">Windows 10 instalition</h1>
+        <h1  onmouseover="onHover()" id="h1">Windows 10 instalition</h1>
        </div>
     </section>
+
+    <div id="div">
+        <h1 id="display-text">Display the input text</h1>
+        <input id="input-text" type="text">
+        <button onclick="onSubmit()" >Submit</button>
+    </div>
+
+    <script>
+        const onSubmit=()=>{
+            const intputText = document.getElementById('input-text')
+        const inputValue = intputText.value;
+        const displayText = document.getElementById('display-text');
+        const h1 = document.createElement('h1');
+        h1.innerText = inputValue
+
+        const div = document.getElementById('div');
+        div.appendChild(h1)
+        intputText.value = '';
+
+
+        }
+    </script>
     <script rel="script" src="script.js"></script>
 </body>
 </html>

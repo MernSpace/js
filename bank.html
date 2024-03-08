@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet " href="bank.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section>
+        <h2 style="text-align: center; font-size: 52px; font-weight: 800px;">wellcome to bank</h2>
+        <div class="grid">
+            <div class="card">
+                <h1 class="title text-3xl font-bold">Deposit</h1>
+                <H2>$<span id="Deposit">00</span></H2>
+
+            </div>
+            <div class="card bg-green">
+                <h1 class="text-3xl font-bold">Withdrawal </h2>
+                <h2>$<span id="Withdrawal-money">00</span></h2>
+            </div>
+            <div class="card">
+                <h1 class="font-bold text-3xl">Cash </h2>
+                <h2>$<span id="Cash">100</span></h2>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="form">
+            <input id="add-money" class="form-control" type="number" placeholder="Add Money">
+            <button class="btn btn-primary" id="add-money-btn">Add</button>
+        </div>
+        <div class="form">
+            <input  id="widthdrow-money" class="form-control" type="number" placeholder="Withdrawal">
+            <button class="btn btn-primary" id="Widthdrow">Widthdrow</button>
+        </div>
+    </section>
+    <script src="bank.js">   
+    </script>
+</body>
+</html>

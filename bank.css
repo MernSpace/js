@@ -1,0 +1,73 @@
+.w-50{
+    height: 50%;
+    width: 50%;
+    margin: 20px 30px;
+    border-radius: 30px;
+    border: 3px solid tomato;
+    background-color: tomato;
+}
+
+section{
+    margin: 50px 20px;
+}
+
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    border-radius: 10ox;
+
+}
+
+.bg-green{
+    background-color: green;
+    border: none;
+}
+
+
+.card{
+    margin-top: 50px;
+    width: 100%;
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 10px 10px #16839e inset;
+
+}
+
+.card h2{
+   
+
+}
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form{
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-control{
+    width: 100%;
+    border: 2px solid tan;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn{
+    background-color: green;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
